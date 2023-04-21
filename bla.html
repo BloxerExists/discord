@@ -1,6 +1,6 @@
 <head>
 <meta charset="utf-8">
-<title>:)</title>
+<title>Transcript | ${i.user.username}</title>
 <style>
     p {
         margin: 0px;
@@ -46,17 +46,8 @@
     }
     .messages {
         margin-top: 30px;
-        display: block;
-        text-align: center;
-    }
-    .center {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-        width: 400px;
-        border: 2px solid white;
-        font-size: 2em;
+        flex-direction: column;
     }
     .messages .msg {
         display: flex;
@@ -98,53 +89,26 @@
             margin: 0;
             padding: 25px;
             width: calc(100% - 50px);
-}
-.header {
-display: block;
-text-align: center;
-}
-.header h2 {
-margin-top: 0;
-}
-.header .header-container {
-margin-top: 10px;
-flex-wrap: wrap;
-}
-.header .header-container .header-item {
-margin-right: 10px;
-margin-bottom: 10px;
-display: inline-block;
-}
-.messages .msg {
-flex-wrap: wrap;
-justify-content: center;
-margin-bottom: 20px;
-}
-.messages .msg .left {
-margin-right: 0;
-margin-bottom: 10px;
-text-align: center;
-}
-.messages .msg .right {
-text-align: center;
-}
-.messages .msg .right div {
-flex-direction: column;
-align-items: center;
-}
-.messages .msg .right a:first-child {
-font-size: 16px;
-margin-right: 0;
-}
-.messages .msg .right p {
-font-size: 14px;
-max-width: 100%;
-}
-.center {
-height: 150px;
-width: 300px;
-font-size: 1.5em;
-}
-}
+        }
+        .ticket-header h2 {
+            margin-top: 0;
+        }
+        .ticket-header .children {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 </style>
 </head>
+<body>
+<div class='header'>
+    <h2>:)</b></h2>
+    <div class='header-container'>
+        <div class='header-item'><a>You found my secret Place :)</p></div>
+        <div class='header-item'><a>Relax a bit :)</p></div>
+        
+</div>
+
+</div>
+</body>
+</html>`
