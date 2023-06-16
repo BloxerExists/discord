@@ -19,6 +19,18 @@
         font-size: 12px;
         font-family: sans-serif;
       }
+      #play-button {
+        background-color: purple;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #play-button:hover {
+        background-color: #8048ff;
+      }
     </style>
   </head>
   <body>
@@ -27,13 +39,13 @@
       <p>If you want, take a minute and relax :)</p>
     </div>
 
-    <button onclick="playAudio()">Play Music</button>
+    <button id="play-button" onclick="playAudio()">Play Music</button>
 
-<script>
-  function playAudio() {
-    var audio = new Audio('Y2Mate.is - Soothing Piano Music by Peder B. Helland, Vol. 5-ldgjk2GipP8-160k-1655887361428.mp3');
-    audio.play();
-  }
-</script>
+    <script>
+      function playAudio() {
+        var audio = new Audio('Y2Mate.is - Soothing Piano Music by Peder B. Helland, Vol. 5-ldgjk2GipP8-160k-1655887361428.mp3');
+        audio.play();
+      }
+    </script>
   </body>
 </html>
