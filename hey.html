@@ -39,6 +39,26 @@
       #play-button:hover {
         background-color: #8018ff;
       }
+      .rich-embed {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 50px auto;
+        max-width: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .rich-embed .title {
+        font-weight: bold;
+        color: #333;
+      }
+      .rich-embed .description {
+        color: #666;
+      }
+      .rich-embed .footer {
+        color: #999;
+        font-style: italic;
+      }
     </style>
   </head>
   
@@ -46,6 +66,13 @@
     <div id="textfeld">
       <h1>Hey you found my Secret Place :)</h1>
       <p>If you want, take a minute and relax :)</p>
+    </div>
+
+    <div class="rich-embed">
+      <div class="title">Title of the Embed</div>
+      <div class="description">Description of the embed message. This can be a longer text providing additional information.</div>
+      <hr>
+      <div class="footer">Footer information or additional details</div>
     </div>
 
 <div style="text-align: center;">
