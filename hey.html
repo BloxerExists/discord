@@ -77,10 +77,19 @@
       <button id="play-button" onclick="playAudio()">Play Music</button> 
 </div>
 
-    <script>
-      function playAudio() {
-        var audio = new Audio('Y2Mate.is - Soothing Piano Music by Peder B. Helland, Vol. 5-ldgjk2GipP8-160k-1655887361428.mp3');
-        audio.play();
+   <script>
+      var audio = new Audio('Y2Mate.is - Soothing Piano Music by Peder B. Helland, Vol. 5-ldgjk2GipP8-160k-1655887361428.mp3');
+      var isPlaying = false;
+
+      function toggleAudio() {
+        if (isPlaying) {
+          audio.pause();
+          document.getElementById('play-button').innerText = 'Play Music';
+        } else {
+          audio.play();
+          document.getElementById('play-button').innerText = 'Stop Music';
+        }
+        isPlaying = !isPlaying;
       }
     </script>
   </body>
