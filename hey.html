@@ -81,13 +81,13 @@
       var audio = new Audio('Y2Mate.is - Soothing Piano Music by Peder B. Helland, Vol. 5-ldgjk2GipP8-160k-1655887361428.mp3');
       var isPlaying = false;
 
-      function toggleAudio() {
+      function playAudio() {
         if (isPlaying) {
           audio.pause();
-          document.getElementById('play-button').innerText = 'Play Music';
+          document.getElementById('play-button').innerHTML = 'Play Music';
         } else {
           audio.play();
-          document.getElementById('play-button').innerText = 'Stop Music';
+          document.getElementById('play-button').innerHTML = 'Stop Music';
         }
         isPlaying = !isPlaying;
       }
